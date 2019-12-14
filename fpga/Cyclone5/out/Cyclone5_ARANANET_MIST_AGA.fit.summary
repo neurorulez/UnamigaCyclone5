@@ -1,0 +1,20 @@
+Fitter Status : Successful - Thu Dec 12 13:38:58 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Cyclone5_ARANANET_MIST_AGA
+Top-level Entity Name : Cyclone5_MIST_AGA_top
+Family : Cyclone V
+Device : 5CEFA2F23I7
+Timing Models : Final
+Logic utilization (in ALMs) : 8,605 / 9,430 ( 91 % )
+Total registers : 10968
+Total pins : 92 / 224 ( 41 % )
+Total virtual pins : 0
+Total block memory bits : 292,312 / 1,802,240 ( 16 % )
+Total RAM Blocks : 44 / 176 ( 25 % )
+Total DSP Blocks : 10 / 25 ( 40 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 4 ( 25 % )
+Total DLLs : 0 / 4 ( 0 % )

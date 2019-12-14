@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------------------------------------------
+// !!! OLD !!! OSD SPI commands:
+// 8'b00000000  NOP
+// 8'b001H0NNN  write data to osd buffer line <NNN> (H - highlight)
+// 8'b0100--KE  enable OSD display (E) and disable Amiga keyboard (K)
+// 8'b1000000B  reset Minimig (B - reset to bootloader)
+// 8'b100001AA  set autofire rate
+// 8'b1001---S  set cpu speed
+// 8'b1010--SS  set scanline mode
+// 8'b1011-SMC  set hard disk config (C - enable HDC, M - enable Master HDD, S - enable Slave HDD)
+// 8'b1100FF-S  set floppy speed and drive number
+// 8'b1101-EAN  set chipset features (N - ntsc, A - OCS A1000, E - ECS)
+// 8'b1110HHLL  set interpolation filter (H - Hires, L - Lores)
+// 8'b111100CC  set memory configuration (S - Slow, C - Chip, F - Fast)
+// 8'b111101SS  set memory configuration (S - Slow, C - Chip, F - Fast)
+// 8'b111110FF  set memory configuration (S - Slow, C - Chip, F - Fast)
+// 8'b111111TT  set cpu type TT=00-68000, 01-68010, 11-68020
+-----------------------------------------------------------------------------------------------------------------------
+// NEW OSD SPI commands
+// 8'b0_000_0000 NOP
+// 8'b0_000_1000 | XXXXXRBC || reset control   | R - reset, B - reset to bootloader, C - reset control block
+// 8'b0_001_1000 | XXXXXXXX || clock control   | unused
+// 8'b0_010_1000 | XXXXXXKE || osd control     | K - disable Amiga keyboard, E - enable OSD
+// 8'b0_000_0100 | XXXXEANT || chipset config  | E - ECS, A - OCS A1000, N - NTSC, T - turbo
+// 8'b0_001_0100 | XXXXXSTT || cpu config      | S - CPU speed, TT - CPU type (00=68k, 01=68k10, 10=68k20)
+// 8'b0_010_0100 | XXFFSSCC || memory config   | FF - fast, CC - chip, SS - slow
+// 8'b0_011_0100 | XXHHLLSS || video config    | HH - hires interp. filter, LL - lowres interp. filter, SS - scanline mode
+// 8'b0_100_0100 | XXXXXFFS || floppy config   | FF - drive number, S - floppy speed
+// 8'b0_101_0100 | XXXXXSMC || harddisk config | S - enable slave HDD, M - enable master HDD, C - enable HDD controler
+// 8'b0_110_0100 | XXXXXXAA || joystick config | AA - autofire rate
+// 8'b0_000_1100 | XXXXXAAA_AAAAAAAA B,B,... || write OSD buffer, AAAAAAAAAAA - 11bit OSD buffer address, B - variable number of bytes
+// 8'b0_001_1100 | A_A_A_A B,B,... || write system memory, A - 32 bit memory address, B - variable number of bytes
+// 8'b1_000_1000 read RTL version
+-------------------------------------------------------------------------------------------------------------------
+// AGA
+// 8'b0_000_1000 | XXXXHRBC || reset control   | H - CPU halt, R - reset, B - reset to bootloader, C - reset control block
+// 8'b0_001_1000 | XXXXXXXX || clock control   | unused
+// 8'b0_010_1000 | XXXXXXKE || osd control     | K - disable Amiga keyboard, E - enable OSD
+// 8'b0_000_0100 | XXXGEANT || chipset config  | **** G - AGA ****, E - ECS, A - OCS A1000, N - NTSC, T - turbo
+// 8'b0_001_0100 | XXXXKCTT || cpu config      | K - fast kickstart enable, C - CPU cache enable, TT - CPU type (00=68k, 01=68k10, **** 10=68k20 ****)
+// 8'b0_010_0100 | XHFFSSCC || memory config   | H - HRTmon, FF - fast, SS - slow, CC - chip
+// 8'b0_011_0100 | DDHHLLSS || video config    | DD - dither, HH - hires interp. filter, LL - lowres interp. filter, SS - scanline mode
+// 8'b0_100_0100 | XXXXXFFS || floppy config   | FF - drive number, S - floppy speed
+// 8'b0_101_0100 | XXXXXSMC || harddisk config | S - enable slave HDD, M - enable master HDD, C - enable HDD controler
+// 8'b0_110_0100 | XXXXXCAA || joystick config | C - CD32pad mode, AA - autofire rate
+// 8'b0_000_1100 | XXXXXAAA_AAAAAAAA B,B,... || write OSD buffer, AAAAAAAAAAA - 11bit OSD buffer address, B - variable number of bytes
+// 8'b0_001_1100 | A_A_A_A B,B,... || write system memory, A - 32 bit memory address, B - variable number of bytes
+// 8'b1_000_1000 read RTL version
+-----------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,101 @@
+Assembler report for Cyclone5_ARANANET_MIST_AGA
+Thu Dec 12 13:40:34 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/fpga/Cyclone5/out/Cyclone5_ARANANET_MIST_AGA.sof
+  6. Assembler Device Options: F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/fpga/Cyclone5/out/Cyclone5_ARANANET_MIST_AGA.rbf
+  7. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Thu Dec 12 13:40:34 2019 ;
+; Revision Name         ; Cyclone5_ARANANET_MIST_AGA            ;
+; Top-level Entity Name ; Cyclone5_MIST_AGA_top                 ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CEFA2F23I7                           ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                        ;
++--------------------------------------------------------------------------------------------------+
+; File Name                                                                                        ;
++--------------------------------------------------------------------------------------------------+
+; F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/fpga/Cyclone5/out/Cyclone5_ARANANET_MIST_AGA.sof ;
+; F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/fpga/Cyclone5/out/Cyclone5_ARANANET_MIST_AGA.rbf ;
++--------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/fpga/Cyclone5/out/Cyclone5_ARANANET_MIST_AGA.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                   ;
++----------------+-----------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                ;
+; Checksum       ; 0x026EA474                                                                                                ;
++----------------+-----------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/fpga/Cyclone5/out/Cyclone5_ARANANET_MIST_AGA.rbf ;
++---------------------+------------------------------------------------------------------------------------------------------+
+; Option              ; Setting                                                                                              ;
++---------------------+------------------------------------------------------------------------------------------------------+
+; Raw Binary File     ;                                                                                                      ;
+;  Compression Ratio  ; 1                                                                                                    ;
++---------------------+------------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Thu Dec 12 13:39:36 2019
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Cyclone5_ARANANET_MIST_AGA -c Cyclone5_ARANANET_MIST_AGA
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 839 megabytes
+    Info: Processing ended: Thu Dec 12 13:40:35 2019
+    Info: Elapsed time: 00:00:59
+    Info: Total CPU time (on all processors): 00:00:29
+
+

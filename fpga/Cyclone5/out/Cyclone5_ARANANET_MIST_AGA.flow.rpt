@@ -1,0 +1,148 @@
+Flow report for Cyclone5_ARANANET_MIST_AGA
+Thu Dec 12 13:46:16 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Thu Dec 12 13:40:34 2019       ;
+; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                   ; Cyclone5_ARANANET_MIST_AGA                  ;
+; Top-level Entity Name           ; Cyclone5_MIST_AGA_top                       ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEFA2F23I7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 8,605 / 9,430 ( 91 % )                      ;
+; Total registers                 ; 10968                                       ;
+; Total pins                      ; 92 / 224 ( 41 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 292,312 / 1,802,240 ( 16 % )                ;
+; Total DSP Blocks                ; 10 / 25 ( 40 % )                            ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++------------------------------------------------+
+; Flow Settings                                  ;
++-------------------+----------------------------+
+; Option            ; Setting                    ;
++-------------------+----------------------------+
+; Start date & time ; 12/12/2019 12:50:03        ;
+; Main task         ; Compilation                ;
+; Revision Name     ; Cyclone5_ARANANET_MIST_AGA ;
++-------------------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++-----------------------------------------+----------------------------------------+----------------------------+-----------------------+------------+
+; Assignment Name                         ; Value                                  ; Default Value              ; Entity Name           ; Section Id ;
++-----------------------------------------+----------------------------------------+----------------------------+-----------------------+------------+
+; ALM_REGISTER_PACKING_EFFORT             ; High                                   ; Medium                     ; --                    ; --         ;
+; COMPILER_SIGNATURE_ID                   ; 132235441421850.157615140207808        ; --                         ; --                    ; --         ;
+; ENABLE_SIGNALTAP                        ; Off                                    ; --                         ; --                    ; --         ;
+; FITTER_EFFORT                           ; Fast Fit                               ; Auto Fit                   ; --                    ; --         ;
+; FMAX_REQUIREMENT                        ; 114 MHz                                ; --                         ; --                    ; --         ;
+; MAX_CORE_JUNCTION_TEMP                  ; 85                                     ; --                         ; --                    ; --         ;
+; MIN_CORE_JUNCTION_TEMP                  ; 0                                      ; --                         ; --                    ; --         ;
+; NUM_PARALLEL_PROCESSORS                 ; All                                    ; --                         ; --                    ; --         ;
+; OPTIMIZATION_MODE                       ; Aggressive Area                        ; Balanced                   ; --                    ; --         ;
+; OPTIMIZATION_TECHNIQUE                  ; Area                                   ; Balanced                   ; --                    ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS          ; Half Signal Swing                      ; --                         ; --                    ; --         ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS          ; Half Signal Swing                      ; --                         ; --                    ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS         ; Half Vccio                             ; --                         ; --                    ; --         ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS         ; Half Vccio                             ; --                         ; --                    ; --         ;
+; PARTITION_COLOR                         ; -- (Not supported for targeted family) ; --                         ; Cyclone5_MIST_AGA_top ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL     ; -- (Not supported for targeted family) ; --                         ; Cyclone5_MIST_AGA_top ; Top        ;
+; PARTITION_NETLIST_TYPE                  ; -- (Not supported for targeted family) ; --                         ; Cyclone5_MIST_AGA_top ; Top        ;
+; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ; On                                     ; Off                        ; --                    ; --         ;
+; PLACEMENT_EFFORT_MULTIPLIER             ; 4.0                                    ; 1.0                        ; --                    ; --         ;
+; POWER_BOARD_THERMAL_MODEL               ; None (CONSERVATIVE)                    ; --                         ; --                    ; --         ;
+; POWER_PRESET_COOLING_SOLUTION           ; No Heat Sink With Still Air            ; --                         ; --                    ; --         ;
+; PROJECT_OUTPUT_DIRECTORY                ; out                                    ; --                         ; --                    ; --         ;
+; ROUTER_EFFORT_MULTIPLIER                ; -- (Not supported for targeted family) ; 1.0                        ; --                    ; --         ;
+; SMART_RECOMPILE                         ; On                                     ; Off                        ; --                    ; --         ;
+; TCO_REQUIREMENT                         ; 2 ns                                   ; --                         ; --                    ; --         ;
+; TOP_LEVEL_ENTITY                        ; Cyclone5_MIST_AGA_top                  ; Cyclone5_ARANANET_MIST_AGA ; --                    ; --         ;
+; TPD_REQUIREMENT                         ; 2 ns                                   ; --                         ; --                    ; --         ;
+; TSU_REQUIREMENT                         ; 2 ns                                   ; --                         ; --                    ; --         ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS      ; Off                                    ; --                         ; --                    ; eda_palace ;
+; VERILOG_MACRO                           ; ARANANET=1                             ; --                         ; --                    ; --         ;
++-----------------------------------------+----------------------------------------+----------------------------+-----------------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:05:24     ; 1.7                     ; 933 MB              ; 00:06:06                           ;
+; Fitter                    ; 00:43:24     ; 1.1                     ; 2144 MB             ; 00:30:51                           ;
+; Assembler                 ; 00:00:58     ; 1.0                     ; 839 MB              ; 00:00:28                           ;
+; TimeQuest Timing Analyzer ; 00:05:35     ; 1.7                     ; 1330 MB             ; 00:04:17                           ;
+; Total                     ; 00:55:21     ; --                      ; --                  ; 00:41:42                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; W7-PC            ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; W7-PC            ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; W7-PC            ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; W7-PC            ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Cyclone5_ARANANET_MIST_AGA -c Cyclone5_ARANANET_MIST_AGA
+quartus_fit --read_settings_files=off --write_settings_files=off Cyclone5_ARANANET_MIST_AGA -c Cyclone5_ARANANET_MIST_AGA
+quartus_asm --read_settings_files=off --write_settings_files=off Cyclone5_ARANANET_MIST_AGA -c Cyclone5_ARANANET_MIST_AGA
+quartus_sta Cyclone5_ARANANET_MIST_AGA -c Cyclone5_ARANANET_MIST_AGA
+
+
+

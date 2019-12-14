@@ -1,0 +1,36 @@
+
+
+D:/repos/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/rtl/reloj_cyclone5/pll.v
+
+Dec 10 10PM:44:55>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+D:/repos/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/rtl/reloj_cyclone5/pll.v
+
+Dec 10 10PM:44:59>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+D:/repos/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/rtl/reloj_cyclone5/pll.v
+
+Dec 10 10PM:45:08>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+D:/repos/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/rtl/reloj_cyclone5/pll.v
+
+Dec 10 10PM:45:15>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/rtl/reloj_cyclone5/pll.v
+
+Dec 11 09AM:34:25>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/rtl/reloj_cyclone5/pll.v
+
+Dec 11 09AM:35:04>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+F:/UnAmiga/UnAmigaFinal_src_v2090429 - cyclone5/rtl/reloj_cyclone5/pll.v
+
+Dec 11 09AM:35:53>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

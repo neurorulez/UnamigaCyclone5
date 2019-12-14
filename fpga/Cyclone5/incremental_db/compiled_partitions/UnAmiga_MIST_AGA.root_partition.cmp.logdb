@@ -1,0 +1,13 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_B|lpm_mult:Mult1|mult_8dt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_B|lpm_mult:Mult0|mult_8dt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_A|lpm_mult:Mult1|mult_8dt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_A|lpm_mult:Mult0|mult_8dt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|paula:PAULA1|paula_audio:ad1|paula_audio_mixer:mix|paula_audio_volume:sv3|lpm_mult:Mult0|mult_gbt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|paula:PAULA1|paula_audio:ad1|paula_audio_mixer:mix|paula_audio_volume:sv0|lpm_mult:Mult0|mult_gbt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|paula:PAULA1|paula_audio:ad1|paula_audio_mixer:mix|paula_audio_volume:sv2|lpm_mult:Mult0|mult_gbt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,minimig:minimig|paula:PAULA1|paula_audio:ad1|paula_audio_mixer:mix|paula_audio_volume:sv1|lpm_mult:Mult0|mult_gbt:auto_generated|mac_out2,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_B|lpm_mult:Mult0|mult_8dt:auto_generated|mac_mult1,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_B|lpm_mult:Mult1|mult_8dt:auto_generated|mac_mult1,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_A|lpm_mult:Mult0|mult_8dt:auto_generated|mac_mult1,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,minimig:minimig|agnus:AGNUS1|agnus_blitter:bl1|agnus_blitter_barrelshifter:barrel_shifter_A|lpm_mult:Mult1|mult_8dt:auto_generated|mac_mult1,
