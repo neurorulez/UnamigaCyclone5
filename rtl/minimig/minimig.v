@@ -221,6 +221,7 @@ module minimig
 	//video
 	output	_hsync,				//horizontal sync
 	output	_vsync,				//vertical sync
+	output   _blank,            //blank
 	output	[7:0] red,			//red
 	output	[7:0] green,		//green
 	output	[7:0] blue,			//blue
@@ -466,6 +467,8 @@ assign drv_snd = drvsnd ? 1'b1 : 1'b0;
 
 //Modo de 15khz o VGA (se cambia por tecla con el xor de vgaswich)
 assign mode_15khz = _15khz ^ vgaswich;
+
+assign _blank = blank;
 
 assign memcfg = memory_config[5:0];
 

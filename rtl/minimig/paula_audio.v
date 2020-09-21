@@ -271,6 +271,7 @@ paula_audio_mixer mix (
 );
 
 
+`ifndef ARANANET  
 //instantiate sigma/delta modulator
 paula_audio_sigmadelta dac
 (
@@ -281,7 +282,7 @@ paula_audio_sigmadelta dac
   .left(left),
   .right(right)
 );
-
+`endif
 
 endmodule
 

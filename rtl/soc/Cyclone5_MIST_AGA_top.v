@@ -1,15 +1,16 @@
 /*****************************************************************************************/
-/* minimig_de0_nan0_top.v                   		                                     */
+/* minimig_de0_nan0_top.v                   		                                         */
 /* Altera DE0 Nano FPGA Top File           		                                         */
 /*                                         		                                         */
-/* 2012, rok.krajnc@gmail.com               		                                     */
-/* 2015, Stefan Kristiansson                		                                     */
+/* 2012, rok.krajnc@gmail.com               		                                         */
+/* 2015, Stefan Kristiansson                		                                         */
 /* 2018, Joseba Epalza <jepalza> UnAmiga MIST-AGA                                        */
 /* 2018, Edu Arana (OSD Translation, and OSD Framework Compiler Setup                    */
 /* 2018, Neuro & Jepalza (Support for RGB, RS232, 2nd Joy, 20MB RAM Expansion)           */
 /* 2019, Neuro (Support for Floppy Noise, Fixes for Bitplanes, AGA Sprites, Blitter)     */
-/* 2019, Victor Trucco (General Clocks Rework)
-/* 2019, Neuro (Port To Cyclone5)
+/* 2019, Victor Trucco (General Clocks Rework)                                           */
+/* 2019, Neuro (Port To Cyclone5)                                                        */
+/* 2020, Neuro (Added UDA I2S Chip and ADV71223 VGA DAC)                                 */
 /*****************************************************************************************/
 
 
@@ -29,11 +30,21 @@ module Cyclone5_MIST_AGA_top (
   inout                 PS2_MDAT,     // PS2 Mouse Data
   inout                 PS2_MCLK,     // PS2 Mouse Clock
   // VGA
+`ifndef ARANANET  
   output                VGA_HS,       // VGA H_SYNC
   output                VGA_VS,       // VGA V_SYNC
   output      [  5:0]   VGA_R,        // VGA Red[7:0], mio 6 bits
   output      [  5:0]   VGA_G,        // VGA Green[7:0] mio 6 bits
   output      [  5:0]   VGA_B,        // VGA Blue[7:0] mio 6 bits
+`else
+  output                VGA_HS,       // VGA H_SYNC
+  output                VGA_VS,       // VGA V_SYNC
+  output      [  7:0]   VGA_R,        // VGA Red[7:0], mio 6 bits
+  output      [  7:0]   VGA_G,        // VGA Green[7:0] mio 6 bits
+  output      [  7:0]   VGA_B,        // VGA Blue[7:0] mio 6 bits
+  output                VGA_CLOCK,    // VGA CLOCK
+  output                VGA_BLANK,    // VGA BLANK
+`endif
   // SD Card
   input                 SD_MISO,      // SD Card Data            - spi MISO
   output                SD_CS,        // SD Card Data 3          - spi CS
@@ -59,6 +70,9 @@ module Cyclone5_MIST_AGA_top (
   output wire           JOY_CLK,
   output wire           JOY_LOAD,
   input wire            JOY_DATA,
+  // SONIDO
+  output                AUDIO_L,      // sigma-delta DAC output left
+  output                AUDIO_R       // sigma-delta DAC output right
 `else
   // LED outputs
   output         [2:0]  LED,
@@ -70,10 +84,12 @@ module Cyclone5_MIST_AGA_top (
   // UART
   output                UART_TXD,     // UART Transmitter
   input                 UART_RXD,     // UART Receiver
+  // SONIDO I2S
+  output						SCLK,
+  output						LRCLK,
+  output						MCLK,
+  output						SDIN
 `endif
-  // SONIDO
-  output                AUDIO_L,      // sigma-delta DAC output left
-  output                AUDIO_R       // sigma-delta DAC output right
 );
 
 
@@ -172,6 +188,7 @@ wire           _ram_ble;      // sram lower byte select
 wire           _ram_we;       // sram write enable
 wire           _ram_oe;       // sram output enable
 wire           _15khz;        // scandoubler disable
+wire           _blank;        // blank singal
 wire           SDO;           // SPI data output
 
 // RS232
@@ -230,7 +247,7 @@ wire           hd_frd; // al led azul
 
 ////////////////////
 // ajustes a placa
-
+wire [14:0] AUDIO_L_DATA,AUDIO_R_DATA;
 // para invertir el estado de los LEDS de mi placa (solo algunos)
 wire [7:0] salida_led; // Salida de señales LEDs para asignar el que neceistemos
 
@@ -612,14 +629,15 @@ minimig minimig (
   //video
   ._hsync       (VGA_HS),   // horizontal sync
   ._vsync       (VGA_VS),   // vertical sync
+  ._blank       (_blank),
   .red          (VGA_R8 ),  // red
   .green        (VGA_G8 ),  // green
   .blue         (VGA_B8 ),  // blue
   //audio
   .left         (AUDIO_L          ),  // audio bitstream left
   .right        (AUDIO_R          ),  // audio bitstream right
-  .ldata        (                 ),  // left DAC data
-  .rdata        (                 ),  // right DAC data
+  .ldata        (AUDIO_L_DATA     ),  // left DAC data  
+  .rdata        (AUDIO_R_DATA     ),  // right DAC data
   //user i/o
   .cpu_config   (cpu_config       ), // out CPU config
   .memcfg       (memcfg           ), // out memory config
@@ -636,8 +654,29 @@ minimig minimig (
   .hd_frd       (hd_frd           )  // hd fifo  ading
 );
 
+`ifndef ARANANET 
 assign VGA_R = VGA_R8[7:2] ; // me quedo con los 6 bits altos
 assign VGA_G = VGA_G8[7:2] ; // para llegar a los de 
 assign VGA_B = VGA_B8[7:2] ; // nuestra placa
+`else
+assign VGA_R     = VGA_R8; // me quedo con los 6 bits altos
+assign VGA_G     = VGA_G8; // para llegar a los de 
+assign VGA_B     = VGA_B8; // nuestra placa
+assign VGA_CLOCK = clk_28; //clk_28 CLOCK_50 clk_7
+assign VGA_BLANK = VGA_HS && VGA_VS; //_blank; //VGA_HS && VGA_VS;
+assign MCLK = CLOCK_50; //CLOCK_50 o clk_50
 
+i2s_audio_out_sin_lpf i2s_audio_out_sin_lpf
+(
+	.reset       (rst_minimig ),
+	.clk         (CLOCK_50    ), //CLOCK_50 o clk_50
+	.sample_rate (1'b0        ), //1=96Khz
+	.left_in     (AUDIO_L_DATA),
+	.right_in    (AUDIO_R_DATA),
+	.i2s_bclk    (SCLK        ),
+	.i2s_lrclk   (LRCLK       ),
+	.i2s_data    (SDIN        )
+   );	 
+
+`endif
 endmodule

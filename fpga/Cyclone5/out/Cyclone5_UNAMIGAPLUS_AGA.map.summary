@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Sep 21 11:32:49 2020
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Cyclone5_UNAMIGAPLUS_AGA
+Top-level Entity Name : Cyclone5_MIST_AGA_top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 10400
+Total pins : 102
+Total virtual pins : 0
+Total block memory bits : 292,312
+Total DSP Blocks : 10
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

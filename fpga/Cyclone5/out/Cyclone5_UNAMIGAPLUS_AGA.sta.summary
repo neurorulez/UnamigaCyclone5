@@ -1,0 +1,405 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : -14.662
+TNS   : -10803.425
+
+Type  : Slow 1100mV 85C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : -13.850
+TNS   : -39222.682
+
+Type  : Slow 1100mV 85C Model Setup 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -12.700
+TNS   : -233.856
+
+Type  : Slow 1100mV 85C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.580
+TNS   : -210.813
+
+Type  : Slow 1100mV 85C Model Setup 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 14.009
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.254
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 0.701
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 1.390
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -4.818
+TNS   : -66.231
+
+Type  : Slow 1100mV 85C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.383
+TNS   : -2.383
+
+Type  : Slow 1100mV 85C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.992
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 13.815
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.004
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.135
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.153
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 1.952
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.093
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 3.012
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 4.309
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 4.473
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 8.478
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.086
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : -14.128
+TNS   : -10374.505
+
+Type  : Slow 1100mV 0C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : -13.552
+TNS   : -37977.522
+
+Type  : Slow 1100mV 0C Model Setup 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -12.651
+TNS   : -234.373
+
+Type  : Slow 1100mV 0C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.339
+TNS   : -180.756
+
+Type  : Slow 1100mV 0C Model Setup 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 14.171
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.110
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 0.712
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 1.350
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -4.802
+TNS   : -65.383
+
+Type  : Slow 1100mV 0C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.475
+TNS   : -2.475
+
+Type  : Slow 1100mV 0C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.302
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 14.122
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.916
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.065
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 1.076
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 2.010
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.093
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.954
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 4.388
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 4.514
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 8.418
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.053
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : -7.319
+TNS   : -1554.609
+
+Type  : Fast 1100mV 85C Model Setup 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -6.173
+TNS   : -110.577
+
+Type  : Fast 1100mV 85C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : -4.681
+TNS   : -9765.964
+
+Type  : Fast 1100mV 85C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.575
+TNS   : -70.617
+
+Type  : Fast 1100mV 85C Model Setup 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 16.631
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 0.739
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -2.371
+TNS   : -30.789
+
+Type  : Fast 1100mV 85C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 2.840
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 4.923
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.010
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.439
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.541
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 0.547
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.563
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.093
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 3.269
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 4.700
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 4.769
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk_50'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 8.736
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.380
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : -6.373
+TNS   : -941.019
+
+Type  : Fast 1100mV 0C Model Setup 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -5.586
+TNS   : -100.323
+
+Type  : Fast 1100mV 0C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : -3.665
+TNS   : -6665.579
+
+Type  : Fast 1100mV 0C Model Setup 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : -2.226
+TNS   : -61.889
+
+Type  : Fast 1100mV 0C Model Setup 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 16.968
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 0.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : -2.120
+TNS   : -27.804
+
+Type  : Fast 1100mV 0C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 3.403
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 5.342
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.461
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.490
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.510
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.093
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 3.269
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ctrl_top:ctrl_top|ctrl_regs:ctrl_regs|spi_cnt[0]'
+Slack : 4.686
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'amiga_clk:amiga_clk|clk7_cnt[1]'
+Slack : 4.784
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk_50'
+Slack : 5.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll4~PLL_OUTPUT_COUNTER|divclk'
+Slack : 8.737
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'amiga_clk|amiga_clk_i|altpll_component|auto_generated|generic_pll2~PLL_OUTPUT_COUNTER|divclk'
+Slack : 16.381
+TNS   : 0.000
+
+------------------------------------------------------------
